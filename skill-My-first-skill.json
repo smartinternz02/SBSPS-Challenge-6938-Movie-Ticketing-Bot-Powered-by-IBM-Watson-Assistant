@@ -1,0 +1,1102 @@
+{
+  "intents": [
+    {
+      "intent": "bye",
+      "examples": [
+        {
+          "text": "b"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "ok"
+        },
+        {
+          "text": "seeYa!"
+        },
+        {
+          "text": "thanks"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "H"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "Hiiiiii"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "otp",
+      "examples": [
+        {
+          "text": "12ab"
+        },
+        {
+          "text": "12fg"
+        },
+        {
+          "text": "12op"
+        },
+        {
+          "text": "46qw"
+        },
+        {
+          "text": "66df"
+        },
+        {
+          "text": "86th"
+        },
+        {
+          "text": "99th"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "date",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Friday, 29th Oct. 2021",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Thursday, 28th Oct. 2021",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Wednesday, 27th Oct. 2021",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Movies",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "BellBottom - Hindi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bhuj - Hindi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Black Widow - Hindi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Chehre - Hindi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dune - English",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Saina - Hindi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sanak - Hindi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Shang Chi - English",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Till Death - English",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Venom - English",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "prices",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Insignia - Rs. 1000",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Insignia - Rs. 500",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Insignia - Rs. 800",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Standard - Rs. 250",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Standard - Rs. 400",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Standard - Rs. 500",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "seats",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "1",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "10",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "2",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "3",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "4",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "5",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "6",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "time",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "10:00 AM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "10:00 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "2:00 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "6:00 PM",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Thank you! Have a great Movie experience!!!",
+            "source": "https://www.crownconnect.com/assets/ThankYou.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "conditions": "#bye",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_9_1634753152602",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "10:00 AM",
+                "value": {
+                  "input": {
+                    "text": "10:00 AM"
+                  }
+                }
+              },
+              {
+                "label": "2:00 PM",
+                "value": {
+                  "input": {
+                    "text": "2:00 PM"
+                  }
+                }
+              },
+              {
+                "label": "6:00 PM",
+                "value": {
+                  "input": {
+                    "text": "6:00 PM"
+                  }
+                }
+              },
+              {
+                "label": "10:00 PM",
+                "value": {
+                  "input": {
+                    "text": "10:00 PM"
+                  }
+                }
+              }
+            ],
+            "description": "select any one ",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@date",
+      "dialog_node": "node_10_1634673301443",
+      "previous_sibling": "node_9_1634671246068"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Sanak - Hindi",
+            "source": "https://m.media-amazon.com/images/M/MV5BODg3NzhlMjktODA2MS00YTJkLWEyYWMtNGYxMzYwYTViMWQwXkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_FMjpg_UX1000_.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Date/Day you want to Watch Movie ?",
+            "options": [
+              {
+                "label": "Wednesday, 27th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Wednesday, 27th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Thursday, 28th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Thursday, 28th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Friday, 29th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Friday, 29th Oct. 2021"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@Movies:(Sanak - Hindi)",
+      "dialog_node": "node_1_1634671153231",
+      "previous_sibling": "node_8_1634671111652"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Ticket Prices",
+            "options": [
+              {
+                "label": "Standard - Rs. 400",
+                "value": {
+                  "input": {
+                    "text": "Standard - Rs. 400"
+                  }
+                }
+              },
+              {
+                "label": "Insignia - Rs. 800",
+                "value": {
+                  "input": {
+                    "text": "Insignia - Rs. 800"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@time:(2:00 PM) ||  @time:(6:00 PM)",
+      "dialog_node": "node_1_1634672550623",
+      "previous_sibling": "node_5_1634672270541"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Black Widow - Hindi",
+            "source": "https://i.pinimg.com/736x/22/41/9a/22419a1fbcfd03100d9dc6b28d8e1a3a.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Date/Day you want to Watch Movie ?",
+            "options": [
+              {
+                "label": "Wednesday, 27th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Wednesday, 27th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Thursday, 28th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Thursday, 28th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Friday, 29th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Friday, 29th Oct. 2021"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@Movies:(Black Widow - Hindi)",
+      "dialog_node": "node_2_1634671198997",
+      "previous_sibling": "node_1_1634671153231"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Ticket Prices",
+            "options": [
+              {
+                "label": "Standard - Rs. 500",
+                "value": {
+                  "input": {
+                    "text": "Standard - Rs. 500"
+                  }
+                }
+              },
+              {
+                "label": "Insignia - Rs. 1000",
+                "value": {
+                  "input": {
+                    "text": "Insignia - Rs. 1000"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@time:(10:00 PM)",
+      "dialog_node": "node_2_1634672618242",
+      "previous_sibling": "node_1_1634672550623"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Shang Chi - English ",
+            "source": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/85/Shang-Chi_theatrical_poster.jpg/revision/latest?cb=20210802191031",
+            "response_type": "image"
+          },
+          {
+            "title": "Date/Day you want to Watch Movie ?",
+            "options": [
+              {
+                "label": "Wednesday, 27th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Wednesday, 27th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Thursday, 28th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Thursday, 28th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Friday, 29th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Friday, 29th Oct. 2021"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@Movies:(Shang Chi - English)",
+      "dialog_node": "node_4_1634670721298",
+      "previous_sibling": "node_9_1634669848742"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Chehre - Hindi ",
+            "source": "https://upload.wikimedia.org/wikipedia/en/a/af/Chehre_film_poster.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Date/Day you want to Watch Movie ?",
+            "options": [
+              {
+                "label": "Wednesday, 27th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Wednesday, 27th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Thursday, 28th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Thursday, 28th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Friday, 29th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Friday, 29th Oct. 2021"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@Movies:(Chehre - Hindi)",
+      "dialog_node": "node_4_1634670852554",
+      "previous_sibling": "node_4_1634670721298"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Dune - English",
+            "source": "https://images.moviesanywhere.com/9692d65209db9caf56769b0ad4a39b7b/c8386f60-738a-4651-82ac-22f289e2487a.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Date/Day you want to Watch Movie ?",
+            "options": [
+              {
+                "label": "Wednesday, 27th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Wednesday, 27th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Thursday, 28th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Thursday, 28th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Friday, 29th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Friday, 29th Oct. 2021"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@Movies:(Dune - English)",
+      "dialog_node": "node_4_1634671052664",
+      "previous_sibling": "node_7_1634670996569"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Ticket Prices",
+            "options": [
+              {
+                "label": "Standard - Rs. 250",
+                "value": {
+                  "input": {
+                    "text": "Standard - Rs. 250"
+                  }
+                }
+              },
+              {
+                "label": "Insignia - Rs. 500",
+                "value": {
+                  "input": {
+                    "text": "Insignia - Rs. 500"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@time:(10:00 AM)",
+      "dialog_node": "node_5_1634672270541",
+      "previous_sibling": "node_10_1634673301443"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "I've several movies for which I can book tickets for you.",
+            "options": [
+              {
+                "label": "Black Widow - Hindi",
+                "value": {
+                  "input": {
+                    "text": "Black Widow - Hindi"
+                  }
+                }
+              },
+              {
+                "label": " Venom - English ",
+                "value": {
+                  "input": {
+                    "text": " Venom - English "
+                  }
+                }
+              },
+              {
+                "label": "BellBottom - Hindi",
+                "value": {
+                  "input": {
+                    "text": "BellBottom - Hindi"
+                  }
+                }
+              },
+              {
+                "label": "Shang Chi - English ",
+                "value": {
+                  "input": {
+                    "text": "Shang Chi - English "
+                  }
+                }
+              },
+              {
+                "label": "Chehre - Hindi ",
+                "value": {
+                  "input": {
+                    "text": "Chehre - Hindi "
+                  }
+                }
+              },
+              {
+                "label": "Bhuj - Hindi ",
+                "value": {
+                  "input": {
+                    "text": "Bhuj - Hindi "
+                  }
+                }
+              },
+              {
+                "label": "Saina - Hindi",
+                "value": {
+                  "input": {
+                    "text": "Saina - Hindi"
+                  }
+                }
+              },
+              {
+                "label": " Dune - English ",
+                "value": {
+                  "input": {
+                    "text": " Dune - English "
+                  }
+                }
+              },
+              {
+                "label": "Till Death - English ",
+                "value": {
+                  "input": {
+                    "text": "Till Death - English "
+                  }
+                }
+              },
+              {
+                "label": "Sanak - Hindi",
+                "value": {
+                  "input": {
+                    "text": "Sanak - Hindi"
+                  }
+                }
+              }
+            ],
+            "description": "Please select any one ",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#greetings",
+      "dialog_node": "node_6_1634668817980",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Saina - Hindi",
+            "source": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Saina_film_poster.jpg/220px-Saina_film_poster.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Date/Day you want to Watch Movie ?",
+            "options": [
+              {
+                "label": "Wednesday, 27th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Wednesday, 27th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Thursday, 28th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Thursday, 28th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Friday, 29th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Friday, 29th Oct. 2021"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@Movies:(Saina - Hindi)",
+      "dialog_node": "node_7_1634670996569",
+      "previous_sibling": "node_8_1634670907567"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Bhuj - Hindi",
+            "source": "https://assets.gadgets360cdn.com/pricee/assets/product/202107/Bhuj-_The_Pride_Of_India-_250_1625832584.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Date/Day you want to Watch Movie ?",
+            "options": [
+              {
+                "label": "Wednesday, 27th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Wednesday, 27th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Thursday, 28th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Thursday, 28th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Friday, 29th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Friday, 29th Oct. 2021"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@Movies:(Bhuj - Hindi)",
+      "dialog_node": "node_8_1634670907567",
+      "previous_sibling": "node_4_1634670852554"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Till Death - English",
+            "source": "https://m.media-amazon.com/images/M/MV5BZGE1YjdlYzUtNGRkNC00MWFmLWI3OTEtMTA4YmNiMjU2NDAwXkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_FMjpg_UX1000_.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Date/Day you want to Watch Movie ?",
+            "options": [
+              {
+                "label": "Wednesday, 27th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Wednesday, 27th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Thursday, 28th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Thursday, 28th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Friday, 29th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Friday, 29th Oct. 2021"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@Movies:(Till Death - English)",
+      "dialog_node": "node_8_1634671111652",
+      "previous_sibling": "node_4_1634671052664"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter the no. of seats you want to book. (Max. - 10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@prices",
+      "dialog_node": "node_8_1634674017713",
+      "previous_sibling": "node_2_1634672618242"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter your 10 digit Mobile No."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@seats",
+      "dialog_node": "node_8_1634674449726",
+      "previous_sibling": "node_8_1634674017713"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Venom - English ",
+            "source": "https://sportshub.cbsistatic.com/i/2021/09/20/41bf5182-ef52-4d6f-a8ff-7beb9def0f86/venom-let-there-be-carnage-5.jpg?auto=webp&width=1080&height=1350&crop=0.8:1,smart",
+            "response_type": "image"
+          },
+          {
+            "title": "Date/Day you want to Watch Movie ?",
+            "options": [
+              {
+                "label": "Wednesday, 27th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Wednesday, 27th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Thursday, 28th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Thursday, 28th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Friday, 29th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Friday, 29th Oct. 2021"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@Movies:(Venom - English)",
+      "dialog_node": "node_9_1634669848742",
+      "previous_sibling": "node_6_1634668817980"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "BellBottom - Hindi",
+            "source": "https://static.toiimg.com/thumb/msid-72007745,width-219,height-317,imgsize-22940/72007745.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Date/Day you want to Watch Movie ?",
+            "options": [
+              {
+                "label": "Wednesday, 27th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Wednesday, 27th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Thursday, 28th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Thursday, 28th Oct. 2021"
+                  }
+                }
+              },
+              {
+                "label": "Friday, 29th Oct. 2021",
+                "value": {
+                  "input": {
+                    "text": "Friday, 29th Oct. 2021"
+                  }
+                }
+              }
+            ],
+            "description": "Select any one",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@Movies:(BellBottom - Hindi)",
+      "dialog_node": "node_9_1634671246068",
+      "previous_sibling": "node_2_1634671198997"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " Link for the Payment is sent to your mobile no. Please make the payment and tickets will be sent on your WhatsApp."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@sys-number",
+      "dialog_node": "node_9_1634753152602",
+      "previous_sibling": "node_8_1634674449726"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I can help you in booking your movie tickets. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
